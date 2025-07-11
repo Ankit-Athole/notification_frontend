@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'notificationbackend-production.up.railway.app'; // Replace with your deployed backend URL
+const API_URL = 'https://notificationbackend-production.up.railway.app/api'; // Replace with your deployed backend URL
 
 export const likePost = async (fromUser, toUser) => {
   await axios.post(`${API_URL}/like`, { fromUser, toUser });
